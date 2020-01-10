@@ -59,3 +59,25 @@ public class Swagger2Configuration {
                 new SecurityReference("Authorization", authorizationScopes));
     }
 }
+
+
+//@Configuration
+//public class Swagger2Configuration {
+//    @Bean
+//    public Docket createRestApi() {
+//        return new Docket(DocumentationType.SWAGGER_2)
+//                .apiInfo(apiInfo())
+//                .select()
+//                .apis(RequestHandlerSelectors.basePackage("com.hl.mars"))
+//                .paths(PathSelectors.any())
+//                .build();
+//    }
+//
+//    private ApiInfo apiInfo() {
+//        return new ApiInfoBuilder()
+//                .title("demo ")
+//                .description("demo 网关接口")
+//                .version("1.0.0")
+//                .build();
+//    }
+//}
